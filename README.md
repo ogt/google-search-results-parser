@@ -7,7 +7,7 @@ Parses  results from the HTML of  google search page results into json.
 ### Usage:
 
 ```javascript
-  var parser = require('google-search-ads-parser')
+  var parser = require('google-search-results-parser')
   parser.parseFile('./test/data/example.html');
   parser.parseFile('./test/data/moto-g.html');
     console.log(result);
