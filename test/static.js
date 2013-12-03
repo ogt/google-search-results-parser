@@ -52,12 +52,11 @@ describe('parser.static', function() {
     var res = parser.static.parseFile('./test/data/odesk.html');
 
     var first = res.results[0];
-    //console.log(first.Extensions.Sitelinks);
-    assert.equal(first.Extensions.Sitelinks.length, 6);
-    assert.equal(first.Extensions.Sitelinks[0].Title, 'Log In');
-    assert.equal(first.Extensions.Sitelinks[0].URL.length > 1, true);
-    assert.equal(first.Extensions.Sitelinks[0].Text, "Log in and get to work. Remember me \nnext time. Forgot password? oDesk.");
-    assert.equal(first.Extensions.Sitelinks[0].DirectURL, 'https://www.odesk.com/login');
+    assert.equal(first.Extensions.SiteLinks.length, 6);
+    assert.equal(first.Extensions.SiteLinks[0].Title, 'Log In');
+    assert.equal(first.Extensions.SiteLinks[0].URL.length > 1, true);
+    assert.equal(first.Extensions.SiteLinks[0].Text, "Log in and get to work. Remember me \nnext time. Forgot password? oDesk.");
+    assert.equal(first.Extensions.SiteLinks[0].DirectURL, 'https://www.odesk.com/login');
   });
 
   it('should parse rating', function() {

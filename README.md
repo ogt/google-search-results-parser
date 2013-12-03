@@ -33,7 +33,7 @@ results : [
                Date :
                Followers :
            }
-           Sitelinks : [   // http://cl.ly/3l0H1U390R0b
+           SiteLinks : [   // http://cl.ly/3l0H1U390R0b
                {
                    Title
                    URL
