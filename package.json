@@ -10,6 +10,7 @@
     "test": "make test"
   },
   "dependencies": {
+    "cheerio": "0.12.4"
   },
   "engines": {
     "node": "*"
